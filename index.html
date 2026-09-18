@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Shekinah Preparatory School | Moshi, Kilimanjaro</title>
+    
+    <!-- for search engines search speed optimazation -->
+    <link rel="preconnect" href="https://raw.githubusercontent.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://maps.google.com">
+    
+    <!-- Mobile App-Like Meta Tags -->
+    <meta name="theme-color" content="#1A365D">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images\nazarene_logo.png">
+    <link rel="apple-touch-icon" href="images\nazarene_logo.png">
+    
+    <!-- Local SEO Meta Tags -->
+    <meta name="description" content="Shekinah Preparatory School offers global standards of education and character building in Moshi, Kilimanjaro, Tanzania. Nurturing Tomorrow's Leaders Today.">
+    <meta name="keywords" content="Shekinah Preparatory School, best school in Moshi, primary school Kilimanjaro, top private schools in Tanzania, education, early years education, NECTA results, Moshi schools">
+    <meta name="author" content="Shekinah Preparatory School">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="English">
+    
+    <!-- Open Graph & Google Schema Markup -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Shekinah Preparatory School | Divine Excellence">
+    <meta property="og:description" content="Equipping students with a world-class education and unshakeable character in Moshi, Kilimanjaro.">
+    <meta property="og:image" content="images\shekinah.jpeg">
+    <meta property="og:url" content="https://shekinahpreparatoryschool.com">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "School",
+      "name": "Shekinah Preparatory School",
+      "logo": "images\nazarene_logo.png",
+      "image": "images\shekinah.jpeg",
+      "telephone": "+255725309342",
+      "email": "shekinahpreparatoryschool@gmail.com",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Moshi",
+        "addressRegion": "Kilimanjaro",
+        "addressCountry": "TZ"
+      },
+      "hasMap": "https://maps.app.goo.gl/adchH5h5vhdfecUK9"
+    }
+    </script>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Tailwind Configuration -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        royal: '#1A365D',
+                        poppy: '#FFB000',
+                        coolgrey: '#F7FAFC',
+                    },
+                    fontFamily: {
+                        heading:['"Playfair Display"', 'serif'],
+                        body:['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- LINK TO EXTERNAL CSS FILE -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="font-body bg-coolgrey text-gray-800 overflow-x-hidden">
+
+    <!-- 1A. MOBILE TOP HEADER -->
+    <div class="md:hidden fixed top-0 w-full bg-white/95 backdrop-blur-md z-50 px-5 py-3 border-b border-gray-100 flex items-center justify-between shadow-sm stagger-load delay-load-0">
+        <div class="flex items-center gap-3">
+            <img src="images\nazarene_logo.png" alt="Logo" class="w-8 h-8 object-contain drop-shadow-sm">
+            <span class="font-heading font-bold text-lg text-royal leading-none">Shekinah Preparatory school</span>
+        </div>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/c/c2/Coat_of_arms_of_Tanzania.svg" alt="Tanzania" class="w-6 h-6 drop-shadow-sm">
+    </div>
+
+    <!-- 1B. DESKTOP NAVIGATION -->
+    <nav id="desktop-nav" class="fixed w-full z-50 transition-all duration-300 hidden md:block bg-transparent py-6">
+        <div class="max-w-7xl mx-auto px-6 flex justify-between items-center">
+            <div class="flex items-center gap-3 cursor-pointer stagger-load delay-load-0">
+                <img src="images\nazarene_logo.png" alt="Shekinah Preparatory Logo" class="w-12 h-12 object-contain drop-shadow-md bg-white/80 rounded-full p-1">
+                <span id="nav-brand" class="font-heading font-bold text-2xl text-royal transition-colors">Shekinah Preparatory school</span>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/c/c2/Coat_of_arms_of_Tanzania.svg" alt="Tanzania Emblem" class="w-8 h-8 ml-2 drop-shadow-md">
+            </div>
+            <div id="nav-links" class="flex gap-6 lg:gap-8 font-body font-medium text-royal transition-colors stagger-load delay-load-100">
+                <a href="#" class="nav-tab hover:text-poppy">Home</a>
+                <a href="#academics" class="nav-tab hover:text-poppy">Academics</a>
+                <a href="#resources" class="nav-tab hover:text-poppy">Resources</a>
+                <a href="#admissions" class="nav-tab hover:text-poppy">Admissions</a>
+                <a href="#library" class="nav-tab hover:text-poppy lib-trigger">Library</a>
+                <a href="#contact" class="nav-tab hover:text-poppy">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 1C. MOBILE BOTTOM DOCK -->
+    <nav class="md:hidden fixed bottom-0 w-full bg-white border-t border-gray-200 flex justify-around items-center p-3 pb-safe z-50 shadow-[0_-5px_15px_rgba(0,0,0,0.05)] stagger-load delay-load-500">
+        <a href="#" class="nav-tab flex flex-col items-center text-royal"><i data-lucide="home" class="w-5 h-5"></i><span class="text-[10px] mt-1 font-body">Home</span></a>
+        <a href="#academics" class="nav-tab flex flex-col items-center text-gray-400 hover:text-royal"><i data-lucide="book-open" class="w-5 h-5"></i><span class="text-[10px] mt-1 font-body">Academics</span></a>
+        <a href="#resources" class="nav-tab flex flex-col items-center text-gray-400 hover:text-royal"><i data-lucide="folder" class="w-5 h-5"></i><span class="text-[10px] mt-1 font-body">Resources</span></a>
+        <a href="#library" class="nav-tab flex flex-col items-center text-gray-400 hover:text-royal lib-trigger"><i data-lucide="image" class="w-5 h-5"></i><span class="text-[10px] mt-1 font-body">Library</span></a>
+        <a href="#contact" class="nav-tab flex flex-col items-center text-gray-400 hover:text-royal"><i data-lucide="map-pin" class="w-5 h-5"></i><span class="text-[10px] mt-1 font-body">Location</span></a>
+    </nav>
+
+    <main class="pb-20 md:pb-0"> 
+        
+        <!-- 2. HERO SECTION -->
+        <section class="min-h-[90vh] md:min-h-screen flex flex-col md:flex-row bg-coolgrey pt-20 md:pt-0">
+            <div class="w-full md:w-1/2 flex flex-col justify-center px-6 py-12 md:p-24 lg:p-32 z-10 text-center md:text-left">
+                <p class="stagger-load delay-load-100 text-poppy font-bold tracking-widest uppercase mb-4 text-xs md:text-sm lg:text-base">Divine Excellence. Global Standards.</p>
+                <h1 class="stagger-load delay-load-200 font-heading text-4xl md:text-6xl lg:text-7xl text-royal font-bold leading-tight mb-6">
+                    Nurturing <br class="hidden md:block"/>Tomorrow's <br class="hidden md:block"/><span class="text-poppy">Leaders Today.</span>
+                </h1>
+                <p class="stagger-load delay-load-300 font-body text-gray-600 text-sm md:text-base lg:text-lg mb-8 max-w-md mx-auto md:mx-0">
+                    Equipping students with a world-class education, unshakeable character, and the skills to thrive globally in Moshi, Kilimanjaro.
+                </p>
+                <div class="stagger-load delay-load-400 flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+                    <a href="#admissions" class="w-full md:w-auto text-center bg-poppy text-royal font-bold px-8 py-4 rounded-full hover:bg-yellow-500 transition-colors shadow-lg active:scale-95">Begin Journey</a>
+                </div>
+            </div>
+
+            <div class="w-full md:w-1/2 h-[40vh] md:h-screen relative bg-royal stagger-load delay-load-500">
+                <div class="absolute inset-0 bg-royal/20 z-10 mix-blend-multiply"></div>
+                <img src="images\shekinah.jpeg" onerror="this.src='https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=2070&auto=format&fit=crop'" alt="Shekinah Preparatory School Moshi" class="w-full h-full object-cover z-0" />
+            </div>
+        </section>
+
+        <!-- 3. ACADEMIC HUB -->
+        <section id="academics" class="py-16 md:py-24 bg-white px-5 md:px-12 lg:px-24">
+            <div class="max-w-7xl mx-auto">
+                <div class="text-center mb-12 md:mb-16 fade-up">
+                    <h2 class="font-heading text-3xl md:text-4xl lg:text-5xl text-royal font-bold mb-4">Academic Pillars</h2>
+                    <p class="font-body text-gray-600 max-w-2xl mx-auto text-sm md:text-base">A comprehensive educational pathway designed to cultivate intellect and character at every stage of development.</p>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 lg:gap-10">
+                    <div class="fade-up delay-100 group bg-coolgrey rounded-3xl p-8 lg:p-10 cursor-pointer hover:scale-[1.02] md:hover:scale-105 transition-transform duration-300 shadow-sm hover:shadow-xl border border-gray-100">
+                        <div class="w-14 h-14 md:w-16 md:h-16 bg-royal text-poppy rounded-2xl flex items-center justify-center mb-6 md:mb-8 group-hover:rotate-12 group-hover:bg-poppy group-hover:text-royal transition-all duration-300">
+                            <i data-lucide="users" class="w-7 h-7 md:w-8 md:h-8"></i>
+                        </div>
+                        <h3 class="font-heading text-xl md:text-2xl text-royal mb-3 md:mb-4 font-bold">Early Years</h3>
+                        <p class="font-body text-gray-600 text-sm md:text-base leading-relaxed">A nurturing start focused on guided play, curiosity, and joyful discovery.</p>
+                    </div>
+
+                    <div class="fade-up delay-200 group bg-coolgrey rounded-3xl p-8 lg:p-10 cursor-pointer hover:scale-[1.02] md:hover:scale-105 transition-transform duration-300 shadow-sm hover:shadow-xl border border-gray-100">
+                        <div class="w-14 h-14 md:w-16 md:h-16 bg-royal text-poppy rounded-2xl flex items-center justify-center mb-6 md:mb-8 group-hover:rotate-12 group-hover:bg-poppy group-hover:text-royal transition-all duration-300">
+                            <i data-lucide="book-open" class="w-7 h-7 md:w-8 md:h-8"></i>
+                        </div>
+                        <h3 class="font-heading text-xl md:text-2xl text-royal mb-3 md:mb-4 font-bold">Primary Excellence</h3>
+                        <p class="font-body text-gray-600 text-sm md:text-base leading-relaxed">Rigorous global curriculum building core academic and leadership skills.</p>
+                    </div>
+
+                    <div class="fade-up delay-300 group bg-coolgrey rounded-3xl p-8 lg:p-10 cursor-pointer hover:scale-[1.02] md:hover:scale-105 transition-transform duration-300 shadow-sm hover:shadow-xl border border-gray-100">
+                        <div class="w-14 h-14 md:w-16 md:h-16 bg-royal text-poppy rounded-2xl flex items-center justify-center mb-6 md:mb-8 group-hover:rotate-12 group-hover:bg-poppy group-hover:text-royal transition-all duration-300">
+                            <i data-lucide="heart" class="w-7 h-7 md:w-8 md:h-8"></i>
+                        </div>
+                        <h3 class="font-heading text-xl md:text-2xl text-royal mb-3 md:mb-4 font-bold">Special Ed (SEN)</h3>
+                        <p class="font-body text-gray-600 text-sm md:text-base leading-relaxed">Inclusive, tailored support ensuring every unique mind flourishes.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. RESOURCES & DOCUMENTS -->
+        <section id="resources" class="py-16 md:py-24 bg-coolgrey px-5 md:px-12 lg:px-24">
+            <div class="max-w-7xl mx-auto">
+                <div class="text-center mb-12 md:mb-16 fade-up">
+                    <h2 class="font-heading text-3xl md:text-4xl lg:text-5xl text-royal font-bold mb-4">Resources & Documents</h2>
+                    <p class="font-body text-gray-600 max-w-2xl mx-auto text-sm md:text-base">Access national examination results, joining instructions, and official school policies.</p>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+                    <div class="fade-up delay-100 group bg-white rounded-3xl p-6 md:p-8 border border-gray-100 shadow-sm hover:shadow-lg transition-all duration-300">
+                        <div class="w-12 h-12 md:w-14 md:h-14 bg-royal text-poppy rounded-2xl flex items-center justify-center mb-5 md:mb-6 group-hover:scale-110 transition-transform">
+                            <i data-lucide="award" class="w-6 h-6 md:w-7 md:h-7"></i>
+                        </div>
+                        <h3 class="font-heading text-xl md:text-2xl text-royal mb-2 md:mb-3 font-bold">National Results</h3>
+                        <p class="font-body text-gray-600 mb-5 text-xs md:text-sm">View our outstanding student performance in the latest NECTA examinations.</p>
+                        <a href="https://www.necta.go.tz/results/view/psle" target="_blank" rel="noopener noreferrer" class="inline-flex items-center text-royal font-bold text-sm md:text-base group-hover:text-poppy transition-colors active:scale-95">
+                            View Results <i data-lucide="arrow-right" class="w-4 h-4 ml-2 group-hover:translate-x-2 transition-transform"></i>
+                        </a>
+                    </div>
+
+                    <div class="fade-up delay-200 group bg-white rounded-3xl p-6 md:p-8 border border-gray-100 shadow-sm hover:shadow-lg transition-all duration-300">
+                        <div class="w-12 h-12 md:w-14 md:h-14 bg-royal text-poppy rounded-2xl flex items-center justify-center mb-5 md:mb-6 group-hover:scale-110 transition-transform">
+                            <i data-lucide="school" class="w-6 h-6 md:w-7 md:h-7"></i>
+                        </div>
+                        <h3 class="font-heading text-xl md:text-2xl text-royal mb-2 md:mb-3 font-bold">Joining Instructions</h3>
+                        <p class="font-body text-gray-600 mb-5 text-xs md:text-sm">Please visit the school administration office in Moshi to pick up the official joining instructions.</p>
+                        <a href="#contact" class="inline-flex items-center text-royal font-bold text-sm md:text-base group-hover:text-poppy transition-colors active:scale-95">
+                            View Location <i data-lucide="map-pin" class="w-4 h-4 ml-2 group-hover:-translate-y-1 transition-transform"></i>
+                        </a>
+                    </div>
+
+                    <div class="fade-up delay-300 group bg-white rounded-3xl p-6 md:p-8 border border-gray-100 shadow-sm hover:shadow-lg transition-all duration-300 md:col-span-2 lg:col-span-1">
+                        <div class="w-12 h-12 md:w-14 md:h-14 bg-royal text-poppy rounded-2xl flex items-center justify-center mb-5 md:mb-6 group-hover:scale-110 transition-transform">
+                            <i data-lucide="shield-check" class="w-6 h-6 md:w-7 md:h-7"></i>
+                        </div>
+                        <h3 class="font-heading text-xl md:text-2xl text-royal mb-2 md:mb-3 font-bold">School Rules</h3>
+                        <p class="font-body text-gray-600 mb-5 text-xs md:text-sm">Review our student code of conduct, core values, and general school regulations.</p>
+                        <a href="#" class="inline-flex items-center text-royal font-bold text-sm md:text-base group-hover:text-poppy transition-colors active:scale-95">
+                            Download PDF <i data-lucide="download" class="w-4 h-4 ml-2 group-hover:-translate-y-1 transition-transform"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. MEDIA LIBRARY GALLERY -->
+        <section id="library" class="py-16 md:py-24 bg-white px-5 md:px-12 lg:px-24">
+            <div class="max-w-7xl mx-auto">
+                <div class="text-center mb-12 md:mb-16 fade-up">
+                    <h2 class="font-heading text-3xl md:text-4xl lg:text-5xl text-royal font-bold mb-4">School Library</h2>
+                    <p class="font-body text-gray-600 max-w-2xl mx-auto text-sm md:text-base">Explore our vibrant community through a collection of school moments, events, and school life.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
+                    <div class="fade-up md:col-span-2 group relative rounded-2xl md:rounded-3xl overflow-hidden shadow-md h-56 md:h-64 bg-gray-200">
+                        <div class="absolute inset-0 bg-black/30 group-hover:bg-black/10 transition-colors z-10 flex items-center justify-center pointer-events-none">
+                            <i data-lucide="play-circle" class="text-white/80 w-12 h-12 md:w-16 md:h-16"></i>
+                        </div>
+                        <video loop muted playsinline id="library-video" class="library-media w-full h-full object-cover opacity-80">
+                            <source data-src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    
+                    <div class="fade-up delay-100 rounded-2xl md:rounded-3xl overflow-hidden shadow-md h-56 md:h-64 relative group bg-gray-200">
+                        <img data-src="images\classes.png" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1577896851231-70ef18881754?q=80&w=2070&auto=format&fit=crop'" class="library-media w-full h-full object-cover hover:scale-110 transition-transform duration-500" alt="Classrooms">
+                        <div class="absolute bottom-0 left-0 w-full bg-gradient-to-t from-royal/90 to-transparent p-4 md:p-6 text-white opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity">
+                            <h4 class="font-heading font-bold text-lg md:text-xl">Modern Classrooms</h4>
+                        </div>
+                    </div>
+
+                    <div class="fade-up delay-200 rounded-2xl md:rounded-3xl overflow-hidden shadow-md h-56 md:h-64 relative group bg-gray-200">
+                        <img data-src="images\administration_office.png" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1503676260728-1c00da094a0b?q=80&w=2022&auto=format&fit=crop'" class="library-media w-full h-full object-cover hover:scale-110 transition-transform duration-500" alt="Administration Office">
+                        <div class="absolute bottom-0 left-0 w-full bg-gradient-to-t from-royal/90 to-transparent p-4 md:p-6 text-white opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity">
+                            <h4 class="font-heading font-bold text-lg md:text-xl">Administration</h4>
+                        </div>
+                    </div>
+
+                    <div class="fade-up delay-300 md:col-span-2 lg:col-span-2 rounded-2xl md:rounded-3xl overflow-hidden shadow-md h-56 md:h-64 relative group bg-gray-200">
+                        <img data-src="images\domitories.jpeg" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1555854877-bab0e564b8d5?q=80&w=2069&auto=format&fit=crop'" class="library-media w-full h-full object-cover hover:scale-110 transition-transform duration-500" alt="Student Dormitories">
+                        <div class="absolute bottom-0 left-0 w-full bg-gradient-to-t from-royal/90 to-transparent p-4 md:p-6 text-white opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity">
+                            <h4 class="font-heading font-bold text-lg md:text-xl">Student Dormitories</h4>
+                        </div>
+                    </div>
+
+                    <div class="fade-up delay-400 md:col-span-1 lg:col-span-2 rounded-2xl md:rounded-3xl overflow-hidden shadow-md h-56 md:h-64 relative group bg-gray-200">
+                        <img data-src="images\beutiful_garden.jpeg" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?q=80&w=2070&auto=format&fit=crop'" class="library-media w-full h-full object-cover hover:scale-110 transition-transform duration-500" alt="School Grounds">
+                        <div class="absolute bottom-0 left-0 w-full bg-gradient-to-t from-royal/90 to-transparent p-4 md:p-6 text-white opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity">
+                            <h4 class="font-heading font-bold text-lg md:text-xl">School Grounds</h4>
+                        </div>
+                    </div>
+
+                    <div class="fade-up delay-500 rounded-2xl md:rounded-3xl overflow-hidden shadow-md h-56 md:h-64 relative group bg-gray-200">
+                        <img data-src="images\bus.jpg" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1557223562-6c77ef161f5f?q=80&w=2070&auto=format&fit=crop'" class="library-media w-full h-full object-cover hover:scale-110 transition-transform duration-500" alt="Transport and Logistics">
+                        <div class="absolute bottom-0 left-0 w-full bg-gradient-to-t from-royal/90 to-transparent p-4 md:p-6 text-white opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity">
+                            <h4 class="font-heading font-bold text-lg md:text-xl">Transport & Logistics</h4>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. ADMISSIONS FUNNEL -->
+        <section id="admissions" class="py-16 md:py-24 bg-coolgrey px-5 md:px-12 lg:px-24">
+            <div class="fade-up max-w-5xl mx-auto bg-white rounded-3xl shadow-lg p-6 md:p-16 border border-gray-100">
+                <h2 class="font-heading text-3xl md:text-4xl text-royal font-bold text-center mb-10 md:mb-12">Admissions Journey</h2>
+                
+                <div class="flex flex-col md:flex-row justify-between items-center relative py-4">
+                    <div class="hidden md:block absolute top-1/2 left-0 w-full h-1 bg-gray-200 -z-10 transform -translate-y-1/2"></div>
+                    <div class="md:hidden absolute left-1/2 top-0 h-full w-1 bg-gray-200 -z-10 transform -translate-x-1/2"></div>
+                    
+                    <div class="flex flex-col items-center mb-8 md:mb-0 bg-white px-2 md:px-4 z-10">
+                        <div class="w-12 h-12 rounded-full bg-royal text-poppy flex items-center justify-center font-bold text-xl mb-3 md:mb-4 shadow-md border-4 border-white">1</div>
+                        <span class="font-heading text-base md:text-lg text-royal font-bold text-center bg-white px-2">Inquiry</span>
+                    </div>
+                    <div class="flex flex-col items-center mb-8 md:mb-0 bg-white px-2 md:px-4 z-10">
+                        <div class="w-12 h-12 rounded-full bg-royal text-poppy flex items-center justify-center font-bold text-xl mb-3 md:mb-4 shadow-md border-4 border-white">2</div>
+                        <span class="font-heading text-base md:text-lg text-royal font-bold text-center bg-white px-2">School Visit</span>
+                    </div>
+                    <div class="flex flex-col items-center mb-8 md:mb-0 bg-white px-2 md:px-4 z-10">
+                        <div class="w-12 h-12 rounded-full bg-royal text-poppy flex items-center justify-center font-bold text-xl mb-3 md:mb-4 shadow-md border-4 border-white">3</div>
+                        <span class="font-heading text-base md:text-lg text-royal font-bold text-center bg-white px-2">Application</span>
+                    </div>
+                    <div class="flex flex-col items-center bg-white px-2 md:px-4 z-10">
+                        <div class="w-12 h-12 rounded-full bg-royal text-poppy flex items-center justify-center font-bold text-xl mb-3 md:mb-4 shadow-md border-4 border-white">4</div>
+                        <span class="font-heading text-base md:text-lg text-royal font-bold text-center bg-white px-2">Enrollment</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 7. GOOGLE MAPS LOCATION SECTION -->
+        <section class="py-16 md:py-24 bg-white px-5 md:px-12 lg:px-24">
+            <div class="max-w-7xl mx-auto">
+                <div class="text-center mb-8 md:mb-12 fade-up">
+                    <h2 class="font-heading text-3xl md:text-4xl lg:text-5xl text-royal font-bold mb-3 md:mb-4">Find Us</h2>
+                    <p class="font-body text-gray-600 max-w-2xl mx-auto text-sm md:text-base">Visit Shekinah Preparatory School in Moshi, Kilimanjaro.</p>
+                </div>
+                
+                <div class="fade-up delay-100 rounded-2xl md:rounded-3xl overflow-hidden shadow-lg border border-gray-200 h-[300px] md:h-[500px]">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2161.469136567408!2d37.28288698587215!3d-3.446684593055584!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x18377fdac1c36697%3A0x22b0e9b12e9dfeff!2sSHEKINAH%20PRIMARY%20SCHOOL!5e1!3m2!1sen!2stz!4v1789062347297!5m2!1sen!2stz" 
+                        width="100%" 
+                        height="100%" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="strict-origin-when-cross-origin">
+                    </iframe>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- 8. FOOTER -->
+    <footer id="contact" class="bg-royal text-white pt-16 pb-28 md:pb-10">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 md:gap-12 mb-12 md:mb-16">
+            <div class="col-span-1 md:col-span-2 lg:col-span-2">
+                <h3 class="font-heading text-2xl md:text-3xl font-bold text-poppy mb-4 md:mb-6 flex items-center gap-3">
+                    <img src="images\nazarene_logo.png" loading="lazy" alt="Shekinah Preparatory Logo" class="w-8 h-8 md:w-10 md:h-10 object-contain drop-shadow-md bg-white/80 rounded-full p-1">
+                    Shekinah Preparatory
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/c/c2/Coat_of_arms_of_Tanzania.svg" loading="lazy" alt="Tanzania Emblem" class="w-8 h-8 md:w-10 md:h-10 drop-shadow-lg">
+                </h3>
+                
+                <p class="font-body text-gray-300 max-w-sm mb-6 text-sm md:text-base">Nurturing tomorrow's leaders today through divine excellence and global educational standards.</p>
+                <div class="flex gap-4">
+                    <a href="#" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-poppy hover:text-royal transition-colors active:scale-95"><i data-lucide="instagram" class="w-5 h-5"></i></a>
+                    <a href="#" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-poppy hover:text-royal transition-colors active:scale-95"><i data-lucide="facebook" class="w-5 h-5"></i></a>
+                    <a href="mailto:shekinahpreparatoryschool@gmail.com" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-poppy hover:text-royal transition-colors active:scale-95"><i data-lucide="mail" class="w-5 h-5"></i></a>
+                </div>
+            </div>
+            
+            <div>
+                <h4 class="font-heading text-lg md:text-xl font-bold mb-4 md:mb-6">Quick Links</h4>
+                <ul class="font-body space-y-3 text-gray-300 text-sm md:text-base">
+                    <li><a href="#" class="hover:text-poppy transition-colors">Home</a></li>
+                    <li><a href="#academics" class="hover:text-poppy transition-colors">Academic Hub</a></li>
+                    <li><a href="#resources" class="hover:text-poppy transition-colors">Resources & Forms</a></li>
+                    <li><a href="#admissions" class="hover:text-poppy transition-colors">Admissions</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="font-heading text-lg md:text-xl font-bold mb-4 md:mb-6">Contact Us</h4>
+                <ul class="font-body space-y-4 md:space-y-3 text-gray-300 text-sm md:text-base">
+                    <li class="flex items-start gap-3">
+                        <i data-lucide="map-pin" class="w-5 h-5 text-poppy shrink-0 mt-1"></i> 
+                        <a href="https://maps.app.goo.gl/adchH5h5vhdfecUK9" target="_blank" class="hover:text-poppy transition-colors">
+                            Shekinah Preparatory School,<br/>Moshi, Kilimanjaro (Click to map)
+                        </a>
+                    </li>
+                    <li class="flex items-center gap-3"><i data-lucide="phone" class="w-5 h-5 text-poppy"></i> <a href="tel:+255725309342">+255 725 309 342</a></li>
+                    <li class="flex items-center gap-3"><i data-lucide="mail" class="w-5 h-5 text-poppy"></i> <a href="mailto:shekinahpreparatoryschool@gmail.com">shekinahpreparatoryschool@gmail.com</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="max-w-7xl mx-auto px-6 border-t border-white/10 pt-8 text-center md:text-left flex flex-col md:flex-row justify-between items-center font-body text-xs md:text-sm text-gray-400">
+            <p>&copy; 2026 Shekinah Preparatory School. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- WHATSAPP FLOATING BUTTON -->
+    <a href="https://wa.me/255725309342" target="_blank" rel="noreferrer" class="whatsapp-float fixed bottom-24 md:bottom-8 right-5 md:right-6 bg-[#25D366] text-white p-3 md:p-4 rounded-full shadow-[0_4px_14px_rgba(37,211,102,0.4)] hover:scale-110 active:scale-95 transition-transform z-50 flex items-center justify-center">
+        <i data-lucide="message-circle" class="w-6 h-6 md:w-7 md:h-7"></i>
+    </a>
+
+    <!-- FORMSPREE SCRIPT -->
+    <script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
+    <script>
+      window.formbutton=window.formbutton||function(){(formbutton.q=formbutton.q||[]).push(arguments);};
+      formbutton("create", {
+        action: "https://formspree.io/f/xbgjwydb",
+        title: "Contact Shekinah Administration", 
+        fields: [
+          { type: "text", label: "Full Name:", name: "name", required: true, placeholder: "e.g. prince shayo" },
+          { type: "email", label: "Email Address:", name: "email", required: true, placeholder: "your@email.com" },
+          { type: "textarea", label: "Your Message:", name: "message", placeholder: "How can we assist you today?", required: true },
+          { type: "submit" }      
+        ],
+        styles: { title: { backgroundColor: "#1A365D", fontFamily: "'Playfair Display', serif", fontSize: "1.1rem" }, button: { backgroundColor: "#FFB000", color: "#1A365D", fontFamily: "'Inter', sans-serif", fontWeight: "bold", transition: "all 0.3s ease" } },
+        initiallyVisible: false 
+      });
+    </script>
+
+    <!-- LINK TO EXTERNAL JAVASCRIPT FILE -->
+    <script src="js/script.js" defer></script>
+</body>
+</html>

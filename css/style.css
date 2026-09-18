@@ -1,0 +1,76 @@
+/* css/style.css */
+
+/* Staggered Entrance Animations */
+@keyframes staggerEntrance {
+    0% { opacity: 0; transform: translateY(30px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+.stagger-load { 
+    opacity: 0; 
+    animation: staggerEntrance 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards; 
+}
+.delay-load-0 { animation-delay: 0ms; }
+.delay-load-100 { animation-delay: 100ms; }
+.delay-load-200 { animation-delay: 200ms; }
+.delay-load-300 { animation-delay: 300ms; }
+.delay-load-400 { animation-delay: 400ms; }
+.delay-load-500 { animation-delay: 500ms; }
+
+/* Scroll Fade-up Animations */
+.fade-up { 
+    opacity: 0; 
+    transform: translateY(30px); 
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out; 
+}
+.fade-up.visible { 
+    opacity: 1; 
+    transform: translateY(0); 
+}
+.delay-100 { transition-delay: 100ms; }
+.delay-200 { transition-delay: 200ms; }
+.delay-300 { transition-delay: 300ms; }
+.delay-400 { transition-delay: 400ms; }
+
+/* Utilities */
+.pb-safe { padding-bottom: env(safe-area-inset-bottom); }
+.nav-tab { transition: color 0.3s ease; }
+
+/* Smooth loading for lazy images */
+.library-media { 
+    transition: opacity 0.5s ease-in-out; 
+    opacity: 0; 
+}
+.library-media.loaded { 
+    opacity: 1; 
+}
+
+/* ========================================== */
+/* FORMSPREE BUTTON UI/UX POSITIONING FIXES   */
+/* ========================================== */
+
+/* Forces the Formspree button to stay above the WhatsApp button on Desktop */
+.formbutton-button,
+#formbutton-button,
+#formbutton {
+    bottom: 6rem !important;
+    right: 1.5rem !important;
+    z-index: 40 !important; /* Keep slightly below mobile dock but above page content */
+}
+
+/* Forces the Formspree button to stay above BOTH WhatsApp and the Bottom Nav Dock on Mobile */
+@media (max-width: 767px) {
+    .formbutton-button,
+    #formbutton-button,
+    #formbutton {
+        bottom: 10rem !important; 
+        right: 1.25rem !important;
+    }
+}
+
+/* Subtle animation for the chat window opening */
+#formbutton-window {
+    border-radius: 1rem !important;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
+    overflow: hidden !important;
+}
